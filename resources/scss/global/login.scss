@@ -1,0 +1,172 @@
+/* Estilo del Contenedor de Login */
+@import '../global/variables.scss';
+.login-page {
+
+    background-color: $background-color_3;
+    width: 100%;  
+    max-width: 1300px; 
+    display: flex;
+    flex-direction: row;
+    border: 1px solid $color_1;
+    border-radius: 8px;
+    margin: 0 auto; 
+    padding: 20px;  
+    justify-content: center;
+    height: auto; 
+}
+
+/* Panel Izquierdo */
+.login-page__left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $background-color_3 ;
+    color: $color_1;
+    padding: 30px;  
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;  
+}
+
+/* Logo */
+.login-page__logo {
+    margin-bottom: 10px;
+}
+
+.login-page__logo img {
+    width: 300px;  /* Reducido el tamaño del logo */
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.login-page__welcome-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: $color_1; 
+}
+
+.login-page__description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Panel Derecho */
+.login-page__right-panel {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color_1;
+    border-radius: 8px;
+}
+
+/* Título del Login */
+.login-page__login-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $button-hover-background-color;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase; 
+    background-color: $color_1; /* Fondo del título */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Subtítulo */
+.login-page__login-subtitle {
+    font-size: 14px;
+    color: $color_3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos del Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%; 
+}
+
+/* Input de Login */
+.login-form__input {
+    width: 100%;  
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid $color_3;
+    border-radius: $border-radius;
+    background-color: $background-color_1;
+    color: $color_1;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+        border-color: $color_2;
+    }
+
+    &::placeholder {
+        color: $color_3; /* Color para los textos del placeholder */
+    }
+}
+
+/* Estilo de los Labels */
+.login-form__label {
+    font-size: 16px;
+    font-weight: bold;
+    color: $color_3;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: left; 
+}
+
+/* Botón de Login */
+.login-form__button {
+    width: 100%;
+    padding: 15px;  /* Aumentado el padding */
+    font-size: 18px; /* Aumentado el tamaño de la fuente */
+    color: $color_1;
+    background-color: $background-color_2;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center; 
+
+    &:hover {
+        background-color: $background-color_3;
+    }
+
+    &:focus {
+        outline: none;
+        background-color: $background-color_3; 
+    }
+}
+
+/* Pie de página del formulario */
+.login-form__footer {
+    text-align: center;
+    font-size: 16px;  
+    color: $color_3;
+    margin-top: 20px;
+}
+
+/* Enlace en el pie de página */
+.login-form__link {
+    font-size: 16px;  
+    color: $color_4;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

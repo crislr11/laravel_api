@@ -1,0 +1,94 @@
+@import '../global/variables.scss';
+.dashboard__table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-top: 1rem;
+
+    &-header {
+        background-color: #16213e; // Color de fondo
+        color: white;  // Letras en blanco en el encabezado
+        border-radius: 8px 8px 0 0;
+    }
+
+    &-heading {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    &-body {
+        .dashboard__table-row {
+            background-color: white;  // Color de fondo de las filas
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc; // Borde gris en cada fila
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                background-color: #0f3460;  // Fondo oscuro al pasar el ratón
+                color: white;  // Texto blanco al pasar el ratón
+                border-color: #16213e;  // Borde más oscuro en hover
+            }
+        }
+    }
+
+    &-cell {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+
+        &:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+}
+
+// Estilo para los botones dentro de la tabla
+.button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    color: white;  // Color de texto blanco
+    cursor: pointer;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+
+    &--primary {
+        background-color: #ffc400;  
+        &:hover {
+            background-color: lighten( #ffc400, 10%);
+        }
+    }
+
+    &--success {
+        background-color: #28a745;  
+        &:hover {
+            background-color: lighten(#28a745, 10%);
+        }
+    }
+
+    &--warning {
+        background-color: #4ccfde;  
+        color: #16213e;
+        &:hover {
+            background-color: lighten( #4ccfde, 10%);
+        }
+    }
+
+    &--danger {
+        background-color: #dc3545;  // Rojo
+        &:hover {
+            background-color: lighten(#dc3545, 10%);
+        }
+    }
+}

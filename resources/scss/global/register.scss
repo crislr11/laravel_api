@@ -1,0 +1,113 @@
+@import '../global/variables.scss';
+
+/* Estilo del Contenedor de Registro */
+.register-page {
+    background-color: $background-color_1; /* Fondo blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Contenedor del Formulario */
+.register-form {
+    background-color: $background-color_3; /* Fondo azul */
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    /* Título del Formulario */
+    &__title {
+        font-size: 2rem;
+        color: $button-hover-background-color; /* Amarillo */
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    /* Campos del Formulario */
+    &__field {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: $button-hover-background-color; /* Amarillo */
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            font-size: 15px;
+            color: $color_1; /* Texto en azul */
+            background-color: $background-color_1; /* Fondo blanco en los campos */
+            border: 1px solid $button-hover-background-color; /* Borde amarillo */
+            border-radius: 8px;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                outline: none;
+                border-color: $color_2;
+            }
+
+            &::placeholder {
+                color: $button-hover-background-color; /* Placeholder en amarillo */
+            }
+        }
+    }
+
+    /* Botón de Registro */
+    &__button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        color: $background-color_3; /* Texto en azul */
+        background-color: $background-color_1; /* Fondo blanco */
+        border: 2px solid $button-hover-background-color; /* Borde amarillo */
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $button-hover-background-color; /* Fondo amarillo */
+            color: $background-color_1; /* Texto blanco */
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    /* Mensajes de Error */
+    .text-danger {
+        font-size: 14px;
+        color: $color_4;
+        margin-top: 5px;
+    }
+
+    /* Pie de Página del Formulario */
+    &__footer {
+        text-align: center;
+        font-size: 14px;
+        color: $button-hover-background-color; /* Amarillo */
+        margin-top: 20px;
+    }
+
+    &__link {
+        color: $button-hover-background-color; /* Amarillo */
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

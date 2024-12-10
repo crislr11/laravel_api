@@ -1,0 +1,17 @@
+
+.dropdown-submenu {
+    position: relative;
+}
+
+/* Estilo para el submenú */
+.dropdown-submenu .dropdown-menu {
+    top: 100%; /* Mantener el mismo nivel vertical */
+    left: 0%; /* Mostrar el submenú a la izquierda del menú padre */
+    margin-top: -1px; /* Ajuste para evitar un pequeño espacio */
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Asegura que se posicione correctamente */
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}

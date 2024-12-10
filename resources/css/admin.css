@@ -1,0 +1,107 @@
+
+.admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin__header {
+    width: 100%;
+    background-color: #3366ff;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .admin__header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Estilo de la Tarjeta del Dashboard */
+  .admin__card {
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .admin__card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .admin__card__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .admin__card__status {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #ff9800;
+  }
+  
+  .admin__card__table {
+    width: 100%;
+    border: 2px solid black;
+  }
+  
+  .admin__card__table thead {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .admin__card__table th {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    font-weight: bold;
+  }
+  
+  .admin__card__table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  .admin__card__table tbody tr:hover {
+    background-color: #f0f9ff;
+  }
+  
+  .admin__card__table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .admin__card__table td:last-child {
+    border-right: none;
+  }
+  
+  .admin__card__table .button {
+    margin-right: 5px;
+    color: #ffffff;
+    background-color: #3366ff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .admin__card__table .button:hover {
+    background-color: #264cbf; 
+  }
+  

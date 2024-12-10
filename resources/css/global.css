@@ -1,0 +1,10 @@
+.dropzone {
+    width: 100%; /* O un ancho específico como 500px */
+    height: 250px; /* Altura que desees */
+    border: 2px dashed #007bff; /* Puedes personalizar el estilo del borde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Un color de fondo opcional */
+    padding: 20px;
+}

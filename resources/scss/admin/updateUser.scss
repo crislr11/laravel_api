@@ -1,0 +1,108 @@
+/* Estilos para el formulario de edición de usuario */
+@import '../global/variables.scss';
+.edit-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f9f9f9; // Fondo claro para el panel de edición
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.edit-user-card {
+  background-color: #ffffff; // Fondo de la tarjeta
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); // Sombra más pronunciada
+  border-radius: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 600px; // Limita el tamaño máximo de la tarjeta
+  margin: 20px 0;
+  transition: transform 0.3s ease; // Efecto de elevación al pasar el mouse
+
+  &:hover {
+      transform: translateY(-5px); // Eleva la tarjeta al pasar el mouse
+  }
+
+  &__header {
+      background-color: #16213e; // Color de fondo similar al de las tablas
+      color: #ffffff; // Color del texto del encabezado
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 10px 10px 0 0; // Bordes redondeados en la parte superior
+
+      h1 {
+          margin: 0;
+          font-size: 28px;
+          font-weight: bold;
+          letter-spacing: 0.5px; // Espaciado entre letras
+      }
+  }
+
+  &__body {
+      padding: 20px; // Espaciado interno del cuerpo de la tarjeta
+
+      .form-group {
+          margin-bottom: 20px; // Espaciado entre campos
+          font-size: 1rem;
+
+          label {
+              font-weight: bold;
+              color: #16213e;
+          }
+
+          input,
+          select {
+              width: 100%;
+              padding: 0.75rem 1rem;
+              border: 1px solid #ccc;
+              border-radius: 8px;
+              font-size: 1rem;
+              transition: border-color 0.3s ease;
+
+              &:focus {
+                  border-color: #3366ff; // Borde azul al hacer focus
+                  outline: none;
+              }
+          }
+      }
+
+      .btn-container {
+          display: flex; // Usar flexbox para centrar el botón
+          justify-content: center; // Centrar el botón
+          margin-top: 20px; // Espaciado superior para el botón
+
+          .btn-primary {
+              background-color: #3366ff; // Color de fondo del botón
+              color: white; // Texto blanco en el botón
+              border: none;
+              border-radius: 8px;
+              padding: 10px 15px;
+              font-size: 1rem;
+              cursor: pointer;
+              transition: background-color 0.3s ease, transform 0.2s ease; 
+
+              &:hover {
+                  background-color: darken(#3366ff, 10%);
+                  transform: translateY(-3px); // Eleva el botón al hacer hover
+              }
+
+              &:active {
+                  background-color: darken(#3366ff, 15%);
+                  transform: translateY(0); // Efecto de "presionar" el botón
+              }
+          }
+      }
+  }
+}
+
+@media (max-width: 768px) {
+  .edit-user-card {
+      padding: 15px; 
+      width: 90%;
+  }
+
+  .edit-user-container {
+      padding: 20px;
+  }
+}
