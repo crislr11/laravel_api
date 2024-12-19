@@ -20,5 +20,5 @@ Route::get('/', function () {
 });
 
 // Rutas de la API para eventos
-Route::get('/eventsAPI', [EventListController::class, 'index'])->name('events.showEvent');
+Route::get('/events', [EventListController::class, 'index'])->name('events.showEvent');
 

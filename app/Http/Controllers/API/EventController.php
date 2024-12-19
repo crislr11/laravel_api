@@ -15,8 +15,8 @@ class EventController extends BaseController
      */
     public function index()
     {
-        $events = Event::all();
-        return $this->sendResponse($events, "Events retrieved successfully");
+        $events = Event::with(['organizer', 'category'])->get();
+        return view('events.index', compact('events'));
     }
 
     /**
